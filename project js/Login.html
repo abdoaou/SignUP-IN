@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link href="style.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <form>
+      <h1 class="Title">Login</h1>
+      <div class="inputs">
+        <div class="UserMail">
+          <label for="Username">Username or Email</label><br />
+          <input class="input-css" type="text" name="NameEmail" size="25px" id="IdEmail"/>
+        </div>
+        <div class="Password">
+          <label for="pass">Password</label><br />
+          <input
+            class="input-css"
+            type="password"
+            name="password"
+            id="IdPassword"
+            size="25px"
+          />
+        </div>
+      </div>
+
+      <div class="ForgotPassword">
+        <a class="link-a" href="ForgotPassword.html">Forgot Password?</a>
+      </div>
+
+      
+        <button onclick="checkCredentials(document.getElementById('IdEmail').value, document.getElementById('IdPassword').value)">Sign in</button>
+        
+     
+
+      <div class="icons">
+        <div class="login-ligne">
+          
+          <span class="social-text">Login with social accounts</span>
+          
+        </div>
+
+        
+        <div class="icons-style">
+          <a href="http://google.com/"
+            ><img src="GoogleLogo.png" style="width: 6%" /></a
+          >
+          <a href="https://twitter.com/"
+            ><img src="Twitterogo.png" style="width: 7%"
+          /></a>
+          <a href="https://github.com/"
+            ><img src="GitHubLogo.png" style="width: 7%"
+          /></a>
+        </div>
+      
+      </div>
+      <div class="SignUp"
+        >Don't have an account? <a href="SignUp.html">Sign Up</a></div>
+      
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>

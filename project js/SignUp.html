@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form>
+      <div id="page">
+        <h1 class="Title">Register</h1>
+        <div class="Username">
+          <label for="Username">Username</label><br />
+          <input class="input-css" type="text" name="Name" size="25px" id="usernameInput"/>
+        </div>
+        <div class="Email">
+          <label for="mail">Email</label><br />
+          <input class="input-css" size="25px" type="email" name="Email" id="emailInput"/>
+        </div>
+        <div class="Password">
+          <label for="pass">Password</label><br />
+          <input
+            class="input-css"
+            size="25px"
+            type="password"
+            name="password"
+            id="passwordInput"
+          />
+        </div>
+
+        <div class="SignUpButton">
+            <button type='submit' onclick="addAccount()"> sign up </button>
+        </div>
+        <div class="icons">
+          <div class="login-ligne">
+            <span class="register-text">Register with social accounts</span>
+          </div>
+
+          <div class="icons-style">
+            <a href="http://google.com/"
+              ><img src="GoogleLogo.png" style="width: 6%"
+            /></a>
+            <a href="https://twitter.com/"
+              ><img src="Twitterogo.png" style="width: 7%"
+            /></a>
+            <a href="https://github.com/"
+              ><img src="GitHubLogo.png" style="width: 7%"
+            /></a>
+          </div>
+        </div>
+        <div class="SignUp">
+          Already have an account? <a href="Login.html">Login</a>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
